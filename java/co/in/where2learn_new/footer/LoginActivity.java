@@ -173,6 +173,8 @@ private String password_pattern = "^[a-zA-Z0-9@#$*_-]*$";
 //				Toast.makeText(activity, activity.getString(R.string.coming_soon), Toast.LENGTH_LONG).show();
 			}
 		};
+
+//		Test changes for Github
 		
 		googlePlusOnClickListener = new View.OnClickListener() {
 			
