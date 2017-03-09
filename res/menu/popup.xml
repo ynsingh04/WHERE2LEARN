@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item  android:id="@+id/item_school"  
+        android:title="School"/>
+      
+    <item  android:id="@+id/item_college"  
+        android:title="College"/>
+    
+    <item  android:id="@+id/item_tuition"  
+        android:title="Tuition"/>
+    
+    <item  android:id="@+id/item_coaching"  
+        android:title="Coaching"/>
+      
+    <item  android:id="@+id/item_hobby"  
+        android:title="Hobby Classes"/>
+    
+    <item  android:id="@+id/item_workshop"  
+        android:title="Workshop/Events"/>
+    
+    <item  android:id="@+id/item_career"  
+        android:title="Career Coaching"/>
+    
+    <item  android:id="@+id/item_professional"  
+        android:title="Professional Courses"/>
+    
+    <item  android:id="@+id/item_shop"  
+        android:title="Shop"/>
+    
+    <item  android:id="@+id/item_news"  
+        android:title="News"/>
+    
+    <item  android:id="@+id/item_talks"  
+        android:title="Talks"/>
+    
+     <item  android:id="@+id/item_version"  
+        android:title="Version"/>
+     
+      <item  android:id="@+id/item_write_to_us"  
+        android:title="Write to us"/>
+
+</menu>

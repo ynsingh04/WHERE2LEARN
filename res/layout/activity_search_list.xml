@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@drawable/bg_blur_watermark_normal" >
+
+    <RelativeLayout
+        android:id="@+id/search_listTitleBarRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/search_listTitleBarLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_list_topbar"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/search_list_searchImageView"
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:src="@drawable/school_list_arrow" />
+
+                <!-- Header Text -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/search_list_title_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:gravity="center"
+                        android:text="@string/school_list_classes_name"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                    
+                    <ImageView
+                        android:id="@+id/search_list_iv_heading_text" 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:background="@drawable/school_icon_text"/>
+
+                    <ImageView
+                        android:id="@+id/search_list_title_nameImageView"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_school" />
+                </RelativeLayout>
+
+                <!-- End Header Text -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/school_list_header_second1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:visibility="gone" >
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_bg_box"
+                    android:entries="@array/select_user"
+                    android:padding="5dip" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_bg_box"
+                    android:entries="@array/select_experiences"
+                    android:padding="5dip" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:src="@drawable/button_search_with_bg_black" />
+            </LinearLayout>
+
+            <!-- End Spinner and search button -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/searchList_tv_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginStart="10dip"
+                        android:text="@string/school_list_available"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/searchList_tv_filtersSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginStart="10dip"
+                        android:text="@string/school_list_available_subtitle" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_availabe_line"
+                        android:contentDescription="@string/app_name" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_search_load_moreTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/notification_date_and_time"
+                    android:drawableStart="@drawable/notification_date_and_time"
+                    android:padding="5dip"
+                    android:text="@string/load_more" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_search_list_listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_listTitleBarRelativeLayout"
+        android:layout_marginBottom="5dip" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/activity_search_listProgressBarLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/activity_search_listProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- footer tag -->
+
+    <include layout="@layout/footer"/>
+
+</RelativeLayout>

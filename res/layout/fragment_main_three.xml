@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- New Design -->
+	<LinearLayout    	
+    	android:padding="10dip"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+    	android:visibility="visible"
+    	android:orientation="vertical"
+    	android:background="@android:color/transparent">
+	    
+	    <TableRow 
+	        android:id="@+id/mainFragmentThree_tr_rowOne"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:visibility="visible">
+	        
+	        <RelativeLayout 
+	            android:id="@+id/mainFragmentThree_rl_shop"
+	            android:layout_width="0dip"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_margin="10dip"
+	            android:background="@drawable/bg_fragment">
+	            
+	            <ImageView 
+	                android:id="@+id/mainFragmentThree_iv_shop"
+	                android:layout_width="40dip"
+	                android:layout_height="40dip"
+	                android:layout_marginTop="15dip"
+	                android:layout_centerHorizontal="true"
+	                android:src="@drawable/shop_icon"/>
+	            
+	            <TextView 
+	                android:id="@+id/mainFragmentThree_tv_shop"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="3dip"
+	                android:layout_marginBottom="3dip"
+	                android:padding="2dip"
+	                android:layout_below="@+id/mainFragmentThree_iv_shop"
+	                android:gravity="center"
+	                android:text="@string/shop_list_classes_name"
+	                android:textColor="@color/white"
+	                android:textSize="14sp"
+	                android:textStyle="bold"/>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout 
+	            android:id="@+id/mainFragmentThree_rl_fillerOne"
+	            android:layout_width="0dip"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_margin="10dip"
+	            android:background="@android:color/transparent">
+	            
+	            
+	            
+	        </RelativeLayout>
+	        
+	    </TableRow>
+	    
+	    <TableRow 
+	        android:id="@+id/mainFragmentThree_tr_fillerTwo"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:visibility="visible">
+	        
+	        
+	        
+	    </TableRow>
+	    
+	</LinearLayout>
+	<!-- End New Design -->
+
+</LinearLayout>

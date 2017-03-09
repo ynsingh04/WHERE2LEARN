@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PopUpView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginStart="5dip"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    
+    android:paddingLeft="20dip"
+    
+    android:paddingStart="20dip" >
+    
+    <ImageButton 
+            android:id="@+id/popup_ib_closePopup"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dip"
+            android:layout_marginEnd="5dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/icon_close_popup"/>
+    
+    <!-- <LinearLayout
+    android:id="@+id/popup_ll_selectAll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="45dip"
+        android:layout_marginStart="45dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginEnd="30dip"
+        android:layout_marginTop="-10dip"
+        android:paddingTop="5dip"
+    android:paddingBottom="5dip" 
+    android:background="@color/lightgrey">
+
+    <CheckBox
+        android:id="@+id/checkbox_selectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textview_selectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:typeface="sans"
+        android:text="@string/select_all" />
+
+</LinearLayout> -->   
+
+    <ListView
+        android:id="@+id/dropDownList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:layout_marginStart="45dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginEnd="30dip"
+        android:layout_marginTop="-10dip"
+        android:background="@android:color/transparent"
+        android:alpha="1" >        
+    </ListView>
+    
+    <!-- <ImageButton 
+            android:id="@+id/popup_ib_closePopup"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="end"
+            android:layout_marginLeft="-15dip"
+            android:layout_marginStart="-15dip"
+            android:layout_marginTop="-5dip"
+            android:background="@drawable/icon_close_popup"/> -->
+
+</LinearLayout>

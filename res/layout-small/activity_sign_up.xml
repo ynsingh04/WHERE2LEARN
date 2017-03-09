@@ -1,0 +1,458 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+            
+            <ImageView
+                android:id="@+id/signup_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:layout_marginLeft="0dip"
+                android:layout_marginStart="0dip"
+                android:contentDescription="@string/app_name"
+                android:padding="5dip"
+                android:src="@drawable/school_list_arrow_filters" />
+
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/login_top_stripe"></RelativeLayout>
+                        
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logo_where2learn" />
+
+            <!-- <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:layout_margin="5dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/app_name_with_shadow"
+                android:visibility="gone" /> -->
+
+            <!-- LinearLayout layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginBottom="15dip"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:padding="15dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_proffessional_img"
+                    android:visibility="gone" />
+
+                <!-- <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/login_sign_up"
+                    android:visibility="gone" /> -->
+                
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dip"
+                    android:layout_marginBottom="10dip"
+                    android:gravity="center"
+                    android:text="Sign up"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"/>
+                
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/signup_name"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/signup_name"
+                    android:hint="@string/sign_up_name"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPersonName"
+                    android:padding="5dip" />
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/login_mail"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/login_mail"
+                    android:hint="@string/login_email"
+                    android:textColorHint="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dip" />
+                </RelativeLayout>
+
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_phoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/signup_phone"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/signup_phone"
+                    android:hint="@string/sign_up_phone"
+                    android:textColorHint="@color/white"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dip" />
+                </RelativeLayout>
+
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginRight="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/login_password"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/login_password"
+                    android:hint="@string/login_password"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="5dip" />
+                </RelativeLayout>
+                
+                <TextView 
+                    android:id="@+id/signUp_tv_passwordHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text=""
+                    android:textColor="@color/white"/>
+
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_confirmPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/login_confirm_password"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/login_confirm_password"
+                    android:hint="@string/login_confirm_password"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="5dip" />
+                </RelativeLayout>
+
+                                
+
+                <!-- Sign Up -->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/list_availabe_line"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:visibility="gone" />
+
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip">
+                    <TextView
+                    android:id="@+id/activity_sign_up_okTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:drawablePadding="5dip"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="@string/sign_up_create_account"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/sign_up_box_big" />
+                </RelativeLayout>
+                
+            </LinearLayout>
+            
+            <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="5dip"
+            android:text="@string/login_listers"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+            <!-- End LinearLayout layout -->
+
+        </LinearLayout>
+        
+    </ScrollView>
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/login_top_stripe"></RelativeLayout>
+                        
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logo_where2learn" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:layout_margin="5dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/app_name_with_shadow"
+                android:visibility="gone" />
+
+            LinearLayout layout
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginBottom="15dip"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:padding="15dip" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_proffessional_img"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/login_sign_up"
+                    android:visibility="gone" />
+                
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dip"
+                    android:layout_marginBottom="10dip"
+                    android:gravity="center"
+                    android:text="Sign up"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"/>
+                
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:layout_margin="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/signup_name"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/signup_name"
+                    android:hint="@string/sign_up_name"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPersonName"
+                    android:padding="5dip" />
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:layout_margin="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/login_mail"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/login_mail"
+                    android:hint="@string/login_email"
+                    android:textColorHint="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dip" />
+                </RelativeLayout>
+
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:layout_margin="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_phoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/signup_phone"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/signup_phone"
+                    android:hint="@string/sign_up_phone"
+                    android:textColorHint="@color/white"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dip" />
+                </RelativeLayout>
+
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:layout_margin="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/login_password"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/login_password"
+                    android:hint="@string/login_password"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="5dip" />
+                </RelativeLayout>
+
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:layout_margin="5dip">
+                    <EditText
+                    android:id="@+id/activity_sign_up_confirmPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fields_bg"
+                    android:drawableLeft="@drawable/login_confirm_password"
+                    android:drawablePadding="5dip"
+                    android:drawableStart="@drawable/login_confirm_password"
+                    android:hint="@string/login_confirm_password"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="5dip" />
+                </RelativeLayout>
+
+                                
+
+                Sign Up
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/list_availabe_line"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:visibility="gone" />
+
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:layout_margin="5dip">
+                    <TextView
+                    android:id="@+id/activity_sign_up_okTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:drawablePadding="5dip"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="@string/sign_up_create_account"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/sign_up_box_big" />
+                </RelativeLayout>
+                
+            </LinearLayout>
+
+            End LinearLayout layout
+
+        </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/activity_schoolProgressBarLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/activity_mainProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- footer tag -->
+
+    <include layout="@layout/footer" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

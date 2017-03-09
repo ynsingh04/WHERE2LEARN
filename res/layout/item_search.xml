@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemSearch_rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="2dip" >
+
+    <ImageView
+        android:id="@+id/itemSearch_iv_icon"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:padding="5dip"
+        android:scaleType="center"
+        android:background="@drawable/icon_item_bullet"
+        android:visibility="invisible" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/itemSearch_iv_icon"
+        android:layout_toRightOf="@+id/itemSearch_iv_icon"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/itemSearch_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/blue"
+            android:layout_marginStart="5dip"
+            android:text="SRMCEM"
+            android:textAppearance="?android:attr/textAppearanceLarge" >
+        </TextView>        
+
+        <TextView
+            android:id="@+id/itemSearch_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginStart="5dip"
+            android:text="Best college in the city." >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginStart="5dip"
+                android:textColor="@color/limegreen"
+                android:textStyle="bold"
+                android:text="Category" />
+
+            <TextView
+                android:id="@+id/itemSearch_tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginStart="5dip"
+                android:text="Schools" >
+            </TextView>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginStart="5dip"
+                android:textColor="@color/limegreen"
+                android:textStyle="bold"
+                android:text="City" />
+
+            <TextView
+                android:id="@+id/itemSearch_tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginStart="5dip"
+                android:text="Lucknow" >
+            </TextView>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginStart="5dip"
+                android:textColor="@color/limegreen"
+                android:textStyle="bold"
+                android:text="@string/contact_no" />
+
+            <TextView
+                android:id="@+id/itemSearch_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginStart="5dip"
+                android:text="5555555555" >
+            </TextView>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/itemSearch_tv_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text=""
+            android:textColor="@color/black"
+            android:typeface="serif"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/itemSearch_txtViewDisabledMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="Workshop/Event is closed now"
+            android:textColor="@color/client_red"
+            android:typeface="serif"
+            android:visibility="gone">
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

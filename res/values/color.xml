@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightsteelblue">#646D7E</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="blue">#0000FF</color>
+  	<color name="dialoglistdivider">#aeabab</color>
+    <color name="dialoglistselector">#e0e0e0</color>
+	<color name="dialogdateback">#6cb9ba</color>
+	<color name="dawnorange">#c54208</color>
+	<color name="quizheadback">#4e4d4a</color>
+	<color name="quizbottomback">#44677a</color>
+	<color name="limegreen">#41a317</color>
+	
+	<color name="dialog_nptel_header">#85D2DD</color>
+	<color name="dialog_nptel_body">#0EAEAE</color>
+	
+	<!-- shelf dialog colours -->
+	<color name="shelfcolorbrown">#7e3517</color>
+	<color name="shelfcolorlightbrown">#B06749</color>
+	<color name="shelfdialogbarbackyellow">#FBF6BC</color>
+	<color name="shelfspinnerbackyellow">#c69556</color>
+	
+	<!-- Theme color for application 12-Aug-13 -->
+	<!-- <color name="titlebarcolor">#5e392e</color> -->
+	<color name="bordercolor">#964b00</color>
+	<color name="backbuttoncolor">#f7f8e0</color>
+	<color name="backbuttonpresscolor">#fe9a2e</color>
+	<color name="closebuttoncolor">#ff9966</color>
+	<color name="closebuttonpresscolor">#fe642e</color>
+	<color name="normalbuttoncolor">#fcf7d3</color>
+	<color name="normalbuttonpresscolor">#faf3bb</color>
+	<color name="darkbrown">#601407</color>
+	<color name="darkorange">#FF4000</color>
+	
+	
+	<!-- Color for exam_driven_dialog -->
+	<color name="brown_dialog_border">#8A2908</color>
+	
+	
+	
+	<!-- Color for exam_driven_dialog -->
+	<color name="custom_white">#8A2908</color>
+	
+	
+	<!-- Custom codes -->
+	<color name="slugish">#bfbf30</color>
+    <color name="bluish">#6666FF</color>
+    <color name="darkgrey">#4d4d4d</color>
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="client_cyan">#2b8aba</color>
+    <color name="client_pink">#c652c6</color>
+    <color name="client_pink_dark">#d45959</color>
+    <color name="client_yello">#bfbf30</color>
+    <color name="client_red">#ff2a00</color>
+    <color name="client_green">#26a126</color>
+    <color name="pink_onion">#AE4574</color>
+    <color name="yellow_mud">#999672</color>
+	
+</resources>

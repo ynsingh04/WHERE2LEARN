@@ -1,0 +1,416 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/coachingTitleBarRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" >
+        
+        <RelativeLayout
+        android:id="@+id/coachingCoverImageRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="@android:color/transparent" >
+
+        <ImageView
+            android:id="@+id/activity_coaching_details_bannerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_coaching_top"
+            android:contentDescription="@string/app_name" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:alpha=".8"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_callTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/school_details_call"
+                    android:padding="5dip"
+                    android:text="@string/school_details_call"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_mapTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/school_details_map"
+                    android:padding="5dip"
+                    android:text="@string/school_details_map"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_shareTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/school_details_share"
+                    android:padding="5dip"
+                    android:text="@string/school_details_share"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_ratingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/school_details_rating"
+                    android:padding="5dip"
+                    android:text="@string/school_details_rating"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_notifyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/school_details_notify"
+                    android:padding="5dip"
+                    android:text="@string/school_details_notify"
+                    android:textColor="@color/white" />
+                
+                <TextView
+                    android:id="@+id/activity_coaching_details_displayImagesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dip"
+                    android:drawableTop="@drawable/school_details_gallery"
+                    android:padding="5dip"
+                    android:text="@string/school_details_display_images"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/coachingTitleBarLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:alpha="0.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/coaching_detailsBackImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:contentDescription="@string/app_name"
+                android:padding="15dip"
+                android:src="@drawable/school_list_arrow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_titleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_typeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/coachingTitleBarRelativeLayout"
+        android:paddingBottom="5dip"
+        android:background="@drawable/bg_blur_watermark_normal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <!-- Description -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school_details_brief_description"
+                    android:textColor="@color/lightsteelblue" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_descriptionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <!-- faculties available -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/school_details_line"
+                    android:text="@string/tuition_details_link"
+                    android:textColor="@color/lightsteelblue" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_linkTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+ 
+	<!-- faculties available -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/school_details_line"
+                    android:text="@string/school_details_info"
+                    android:textColor="@color/lightsteelblue" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_facilities_availableTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            
+            <!-- Contact details -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/school_details_line"
+                    android:text="@string/school_details_contact_details"
+                    android:textColor="@color/lightsteelblue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school_details_address"
+                    android:textColor="@color/lightsteelblue" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_addressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school_details_phone"
+                    android:textColor="@color/lightsteelblue" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_mobilenumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/client_cyan"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                
+                <TextView
+                    android:id="@+id/activity_coaching_details_mobilenumberTwoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/client_cyan"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                
+                <!-- external link -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/school_details_external_link"
+                    android:textColor="@color/lightsteelblue" />
+
+                <TextView
+                    android:id="@+id/activity_coaching_details_external_link1TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/client_cyan"
+                    android:textSize="16sp" />
+                
+                <TextView
+                    android:id="@+id/activity_coaching_details_external_link2TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/client_cyan"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            
+            </LinearLayout>
+
+            <!-- user rating -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/school_details_line"
+                    android:text="@string/school_details_user_rating"
+                    android:textColor="@color/lightsteelblue" />
+
+                <RatingBar
+                    android:id="@+id/activity_coaching_details_ratingRatingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="0" />
+            </LinearLayout>
+
+            <!-- Profile photos -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="15dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/school_details_line"
+                    android:text="@string/school_details_more_photos"
+                    android:textColor="@color/lightsteelblue" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/activity_coaching_details_image1ImageView"
+                            android:layout_width="80dip"
+                            android:layout_height="80dip"
+                            android:layout_margin="5dip"
+                            android:contentDescription="@string/app_name"
+                            android:background="@drawable/school_details_photo"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/activity_coaching_details_image2ImageView"
+                            android:layout_width="80dip"
+                            android:layout_height="80dip"
+                            android:layout_margin="5dip"
+                            android:contentDescription="@string/app_name"
+                            android:background="@drawable/school_details_photo"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/activity_coaching_details_image3ImageView"
+                            android:layout_width="80dip"
+                            android:layout_height="80dip"
+                            android:layout_margin="5dip"
+                            android:contentDescription="@string/app_name"
+                            android:background="@drawable/school_details_photo"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/activity_coaching_details_image4ImageView"
+                            android:layout_width="80dip"
+                            android:layout_height="80dip"
+                            android:layout_margin="5dip"
+                            android:contentDescription="@string/app_name"
+                            android:background="@drawable/school_details_photo"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <!-- end -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/activity_coachingProgressBarLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/activity_mainProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- footer tag -->
+
+    <include layout="@layout/footer" />
+
+</RelativeLayout>

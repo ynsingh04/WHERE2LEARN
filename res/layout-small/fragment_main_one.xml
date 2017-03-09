@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- New Design -->
+	<LinearLayout    	
+    	android:padding="10dip"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+    	android:visibility="visible"
+    	android:orientation="vertical"
+    	android:background="@android:color/transparent">
+	    
+	    <TableRow 
+	        android:id="@+id/mainFragmentOne_tr_rowOne"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:visibility="visible">
+	        
+	        <RelativeLayout 
+	            android:id="@+id/mainFragmentOne_rl_school"
+	            android:layout_width="0dip"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_margin="10dip"
+	            android:background="@drawable/bg_fragment">
+	            
+	            <ImageView
+	                android:id="@+id/mainFragmentOne_iv_school" 
+	                android:layout_width="40dip"
+	                android:layout_height="40dip"
+	                android:layout_marginTop="15dip"
+	                android:layout_centerHorizontal="true"
+	                android:src="@drawable/school_icon"/>
+	            
+	            <TextView
+	                android:id="@+id/mainFragmentOne_tv_school" 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="3dip"
+	                android:layout_marginBottom="3dip"
+	                android:padding="2dip"
+	                android:layout_below="@+id/mainFragmentOne_iv_school"
+	                android:gravity="center"
+	                android:text="@string/school_list_classes_name"
+	                android:textColor="@color/white"
+	                android:textSize="10sp"
+	                android:textStyle="bold"/>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout 
+	            android:id="@+id/mainFragmentOne_rl_college"
+	            android:layout_width="0dip"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_margin="10dip"
+	            android:background="@drawable/bg_fragment">
+	            
+	            <ImageView
+	                android:id="@+id/mainFragmentOne_iv_college" 
+	                android:layout_width="40dip"
+	                android:layout_height="40dip"
+	                android:layout_marginTop="15dip"
+	                android:layout_centerHorizontal="true"
+	                android:src="@drawable/college_icon"/>
+	            
+	            <TextView 
+	                android:id="@+id/mainFragmentOne_tv_college"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="3dip"
+	                android:layout_marginBottom="3dip"
+	                android:padding="2dip"
+	                android:layout_below="@+id/mainFragmentOne_iv_college"
+	                android:gravity="center"
+	                android:text="@string/college_list_classes_name"
+	                android:textColor="@color/white"
+	                android:textSize="10sp"
+	                android:textStyle="bold"/>
+	            
+	        </RelativeLayout>
+	        
+	    </TableRow>
+	    
+	    <TableRow 
+	        android:id="@+id/mainFragmentOne_tr_rowTwo"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:visibility="visible">
+	        
+	        <RelativeLayout 
+	            android:id="@+id/mainFragmentOne_rl_tuition"
+	            android:layout_width="0dip"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_margin="10dip"
+	            android:background="@drawable/bg_fragment">
+	            
+	            <ImageView 
+	                android:id="@+id/mainFragmentOne_iv_tuition"
+	                android:layout_width="40dip"
+	                android:layout_height="40dip"
+	                android:layout_marginTop="15dip"
+	                android:layout_centerHorizontal="true"
+	                android:src="@drawable/tuition_icon"/>
+	            
+	            <TextView 
+	                android:id="@+id/mainFragmentOne_tv_tuition"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="3dip"
+	                android:layout_marginBottom="3dip"
+	                android:padding="2dip"
+	                android:layout_below="@+id/mainFragmentOne_iv_tuition"
+	                android:gravity="center"
+	                android:text="@string/tuition_list_classes_name"
+	                android:textColor="@color/white"
+	                android:textSize="10sp"
+	                android:textStyle="bold"/>
+	            
+	        </RelativeLayout>
+	        
+	        <RelativeLayout 
+	            android:id="@+id/mainFragmentOne_rl_coaching"
+	            android:layout_width="0dip"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:layout_margin="10dip"
+	            android:background="@drawable/bg_fragment">
+	            
+	            <ImageView 
+	                android:id="@+id/mainFragmentOne_iv_coaching"
+	                android:layout_width="40dip"
+	                android:layout_height="40dip"
+	                android:layout_marginTop="15dip"
+	                android:layout_centerHorizontal="true"
+	                android:src="@drawable/coaching_icon"/>
+	            
+	            <TextView 
+	                android:id="@+id/mainFragmentOne_tv_coaching"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="3dip"
+	                android:layout_marginBottom="3dip"
+	                android:padding="2dip"
+	                android:layout_below="@+id/mainFragmentOne_iv_coaching"
+	                android:gravity="center"
+	                android:text="@string/coaching_list_classes_name"
+	                android:textColor="@color/white"
+	                android:textSize="10sp"
+	                android:textStyle="bold"/>
+	            
+	        </RelativeLayout>
+	        
+	    </TableRow>
+	    
+	</LinearLayout>
+	<!-- End New Design -->
+
+</LinearLayout>

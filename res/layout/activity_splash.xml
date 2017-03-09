@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:gravity="center" 
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView 
+        android:id="@+id/splash_iv_centerImage"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_gravity="center"
+        android:background="@drawable/logo_splash"
+        android:visibility="visible"/>
+    
+    <VideoView
+        android:id="@+id/splash_videoVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <ImageView 
+        android:id="@+id/splash_imageView_logo"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/logo_splash"
+        android:visibility="gone"/>
+    
+    <TableRow
+        android:id="@+id/splash_tv_msg" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="invisible">
+        
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:text="CLICK TO "
+        android:textColor="@color/client_cyan"
+        android:textSize="18sp"/>
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:text="START"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"/>
+        
+    </TableRow>
+    
+</FrameLayout>

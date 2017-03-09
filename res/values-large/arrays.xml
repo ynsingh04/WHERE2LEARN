@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<array name="entries">
+		<item>@drawable/img_school_large</item>
+		<item>@drawable/img_shop_large</item>
+		<item>@drawable/img_professional_large</item>
+		<item>@drawable/img_career_large</item>
+		<item>@drawable/img_workshop_large</item>
+		<item>@drawable/img_hobby_large</item>
+		<item>@drawable/img_coaching_large</item>
+		<item>@drawable/img_tuition_large</item>		
+		<item>@drawable/img_college_large</item>
+	</array>	
+	<array name="names">
+	    <item>The school</item>
+	    <item>The shop</item>
+	    <item>The professional</item>
+	    <item>The career</item>
+	    <item>The workshop</item>
+	    <item>The hobby</item>
+	    <item>The coaching</item>
+	    <item>The tuition</item>
+	    <item>The college</item>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	</array>
+</resources>

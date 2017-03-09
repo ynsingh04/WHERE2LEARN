@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_blur_watermark_normal" >
+    
+    <LinearLayout
+                android:id="@+id/search_ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_list_topbar"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/search_iv_back"
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:src="@drawable/school_list_arrow" />
+
+                <!-- Header Text -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:id="@+id/search_tv_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:gravity="center"
+                        android:text="@string/search_heading"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+                    
+                    <ImageView
+                        android:id="@+id/search_tv_headingImage" 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:background="@drawable/school_icon_text"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/search_tv_icon"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_search_white_48dp" />
+                </RelativeLayout>
+
+                <!-- End Header Text -->
+
+            </LinearLayout>            
+                
+        <EditText 
+        android:id="@+id/search_et_searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/search_Text"
+        android:textColorHint="@color/darkgrey"
+        android:textColor="@color/black"
+        android:inputType="text"/>
+    
+    <TableRow 
+        android:id="@+id/search_tr_selectDomain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">    
+    
+    <Spinner 
+        android:id="@+id/search_sp_selectDomain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:entries="@array/domain_names"/>
+    
+    <Button 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:layout_weight="2"
+        android:background="@drawable/button_submit"
+        android:textColor="@color/white"
+        android:text="Go"
+        android:visibility="invisible"/>
+        
+    </TableRow>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:text="(Optional)"
+        android:visibility="gone"/>
+    
+    <TableRow 
+        android:id="@+id/search_tr_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">    
+    
+    <Spinner 
+        android:id="@+id/search_sp_selectCity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"/>
+    
+    <Button 
+        android:id="@+id/search_btn_go"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:layout_weight="2"
+        android:background="@drawable/button_submit"
+        android:textColor="@color/white"
+        android:text="Go"/>
+        
+    </TableRow>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:text="(Optional)"
+        android:visibility="gone"/>
+    
+    <ListView 
+        android:id="@+id/search_lv_searchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

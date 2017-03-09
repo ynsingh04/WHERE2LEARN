@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_rl_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="35dip"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent"
+    android:visibility="gone">
+
+    <TableRow 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip">
+        
+        <RelativeLayout
+        android:id="@+id/footer_rl_notification" 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+            <TextView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:drawablePadding="5dip"
+        android:drawableLeft="@drawable/icon_notification_large"
+        android:drawableStart="@drawable/icon_notification_large"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/notification"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+        </RelativeLayout>
+        
+
+        <RelativeLayout
+        android:id="@+id/footer_rl_login" 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+            <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:drawablePadding="5dip"
+        android:drawableLeft="@drawable/icon_login_large"
+        android:drawableStart="@drawable/icon_login_large"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+        </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/footer_rl_location" 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:drawablePadding="5dip"
+        android:drawableLeft="@drawable/icon_location_large"
+        android:drawableStart="@drawable/icon_location_large"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/location"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+    </RelativeLayout>
+    
+        
+    </TableRow>    
+
+</RelativeLayout>

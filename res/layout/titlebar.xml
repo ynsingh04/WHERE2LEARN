@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:src="@drawable/app_title" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/mainmenu_search"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/mainmenu_search"
+        android:visibility="invisible" />
+
+</RelativeLayout>

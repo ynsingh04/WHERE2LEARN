@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/dailog_ratingRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="31dip"
+        android:background="@drawable/bg_login" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:padding="5dip"
+                android:src="@drawable/rating_star" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text="@string/rating"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/dailog_ratingRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip" >
+    </RatingBar>
+    
+    <Button 
+        android:id="@+id/dailog_ratingOKButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rating_ok"
+        
+        />
+
+</LinearLayout>

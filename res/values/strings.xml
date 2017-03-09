@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WHERE2LEARN</string>
+    <string name="googleplus_app_id">296147021059-pjtapsq02du553cr0hqghbp5fe57mr3m.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">1452324014808128</string>
+    <string name="select_string">Select an item</string>
+    <string name="crash_text">Reporting Crash..</string>
+
+    <!-- Toast -->
+    <string name="under_construction">Under Construction</string>
+    <string name="error_in_data_initialization">Problem in data initialization. Try again</string>
+    <string name="error_at_server_end">Request Failed. Try again</string>
+    <string name="please_select_only_one_city">Please select only one city</string>
+    <string name="area_option_is_not_available_for_home_tutor">Area option is not available for</string>
+    <string name="board_option_is_not_available_for_playschool">Board option is not available for Playschool/Pre-school</string>
+    <string name="invalid_data_entry">Invalid data entry. Try again</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="logout_successfully">Logged Out Successfully</string>
+    <string name="operation_failed">Operation failed. Try again</string>
+    <string name="phone_no_already_exists">Phone no. already exists, please try another.</string>
+    <string name="email_id_already_exists">Email ID already exists, please try another.</string>
+    <string name="user_already_exists">Email ID or Phone no. already exists, please try another.</string>
+    <string name="already_login">You Are Already login</string>
+    <string name="please_login">Please login to use this option.</string>
+    <string name="request_processed">Request processed</string>
+    <string name="no_data_found">No data found. Please try later on.</string>
+    <string name="no_images_found">No images available.</string>
+    <string name="enter_email_id">Please enter user id and password.</string>
+    <string name="invalid_email_id">Invalid e-mail id.</string>
+    <string name="invalid_email_id_or_phone">Invalid e-mail id or phone number.</string>
+    <string name="invalid_password">Invalid password.</string>
+    <string name="fill_all_fields">Please fill all the fields.</string>
+    <string name="invalid_phone_no">At least 10 digits required in Phone number.</string>
+    <string name="enter_phone_or_email">Please enter either phone number or email id.</string>
+    <string name="invalid_name">Invalid name.</string>
+    <string name="passwords_not_matching">Password and Confirm password do not match.</string>
+    <string name="no_internet_found">No internet found.</string>
+    <string name="coming_soon">Coming Soon...</string>
+    <string name="submission_successfull">Submission Successful</string>
+    <string name="submission_failed">Submission Failed</string>
+    <string name="invalid_message">At least 10 characters required in message.</string>
+    <string name="no_data_available">As of now no data available for above category. Try other.</string>
+    
+    <string name="select_a_city">Please select a city</string>
+    <string name="select_a_category">Please select a category</string>
+    <string name="select_a_sub_category">Please select a sub category</string>
+    <string name="select_a_type">Please select a type</string>
+    <string name="select_a_sex">Please select a sex</string>
+    <string name="select_an_age">Please select an age</string>
+    <string name="select_an_area">Please select an area</string>
+    <string name="select_a_month">Please select a month</string>
+    <string name="select_a_course">Please select a course</string>
+    <string name="select_a_class">Please select a class</string>
+    <string name="select_a_board">Please select a board</string>
+    <string name="select_a_subject">Please select a subject</string>
+    <string name="select_only_one_category">Please select only one category</string>
+    <string name="select_only_one_class">Please select only one class</string>
+    
+    <!-- dialog -->
+    <string name="revise_search">No match found. Please either revise the search or use other sections.</string>
+    <string name="sorry_message">Sorry that we are unable to give you required information 
+        but we will try and find out what you are looking for and update you about the same.
+        \nKindly write your issue to us through (Write to us) section.</string>
+    <string name="rating_ok">Rate this</string>
+    <string name="upgrade_alert">A new version to this app is available</string>
+
+    <!-- footer string -->
+    <string name="notification">NOTIFICATION</string>
+    <string name="login">LOGIN</string>
+    <string name="location">LOCATION</string> 
+    <string name="enter_search">Enter search string</string>
+    <string name="logout">LOGOUT</string>
+    <string name="logout_alert">Logout Alert</string>
+    <string name="logout_message">Do you want to logout?</string>
+
+    <!-- school screen -->
+    <string name="school_city">City</string>
+    <string name="school_area">Area/Nearby</string>
+    <string name="school_age">Age</string>
+    <string name="school_group">Class</string>
+    <string name="school_board">Board</string>
+    <string name="school_sex">Sex</string>
+    <string name="school_type">Type</string>
+
+    <!-- coaching screen -->
+    <string name="find_coaching_class">Find coaching classes</string>
+    <string name="coaching_class">Class</string>
+    <string name="coaching_subject">Subject(s)</string>
+
+    <!-- tutor screen -->
+    <string name="tutor_type">Type</string>
+    <string name="tutor_class">Class</string>
+    <string name="tutor_subject">Subject(s)</string>
+
+    <!-- college screen -->
+    <string name="school_course">Course</string>
+
+    <!-- career screen -->
+    <string name="school_category">Category</string>
+    <string name="career_subject">Subject(s)</string>
+
+    <!-- hobby screen -->
+    <string name="hobby_age">Age</string>
+    <string name="hobby_sex">Sex</string>
+    <string name="hobby_category1">Category</string>
+    <string name="hobby_category2">Sub Category</string>
+
+    <!-- workshop screen -->
+    <string name="workshop_calendar_date">Date</string>
+    <string name="workshop_calendar_month">Month</string>
+    <string name="workshop_calendar_year">Year</string>
+
+    <!-- login screen -->
+    <string name="login_sign_in">Sign In with</string>
+    <string name="login_email">Email</string>
+    <string name="login_email_or_phone">Email/Phone No.</string>
+    <string name="login_password">Password</string>
+    <string name="login_confirm_password">Confirm Password</string>
+    <string name="login_new_user_sign_up">NEW USER?</string>
+    <string name="login_listers">For listing logon to \nhttp://where2learn.co.in</string>
+
+    <!-- sign_up -->
+    <string name="sign_up_create_account">Sign up</string>
+    <string name="sign_up_phone">Phone</string>
+    <string name="sign_up_name">Name</string>
+
+    <!-- school list -->
+    <string name="school_list_classes_name">SCHOOL</string>
+    <string name="school_list_available">Total results found</string>
+    <string name="school_list_available_subtitle">Showing results of available items in your search criteria</string>
+	<string name="contact_no">Contact No. </string>
+	<string name="load_more">Load More</string>
+    
+    <string-array name="select_user">
+        <item>Select User</item>
+    </string-array>
+    <string-array name="select_experiences">
+        <item>Select</item>
+    </string-array>
+    
+    <string name="select_all">Select All</string>
+
+    <!-- college list -->
+    <string name="college_list_classes_name">COLLEGE</string>
+
+    <!-- tuition list -->
+    <string name="tuition_list_classes_name">TUITION</string>
+
+    <!-- coaching list -->
+    <string name="coaching_list_classes_name">COACHING</string>
+
+    <!-- hobby list -->
+    <string name="hobby_list_classes_name">HOBBY\nCLASSES</string>
+
+    <!-- workshop list -->
+    <string name="workshop_list_classes_name">WORKSHOP AND\nEVENTS</string>
+
+    <!-- carrer list -->
+    <string name="carrer_list_classes_name">CAREER\nCOACHING</string>
+
+    <!-- professional list -->
+    <string name="professional_list_classes_name">PROFESSIONAL\nCOURSES</string>
+    
+    <!-- shop list -->
+    <string name="shop_list_classes_name">SHOP</string>
+    
+    
+    <!-- news list -->
+    <string name="news_header">News</string>
+    
+    <!-- talk list -->
+    <string name="talk_header">Talks</string>
+    
+    <!-- shop screen -->
+    <string name="shop">Shop</string>
+    <string name="shop_category">Category</string>
+    <string name="shop_sub_category">Sub Category</string>
+    
+    
+    <!-- notification list -->
+    <string name="notification_header">Notifications</string>
+    
+    <!-- location list -->
+    <string name="location_header">Available Locations</string>
+    
+    
+    <!-- rating dialog -->
+    <string name="rating">Rating</string>
+
+    <!-- school details -->
+    <string name="school_details_call">Call</string>
+    <string name="school_details_map">Map</string>
+    <string name="school_details_share">Share</string>
+    <string name="school_details_rating">Rating</string>
+    <string name="school_details_notify">Notify</string>
+    <string name="school_details_display_images">Gallery</string>
+    <string name="school_details_brief_description">Brief Description</string>
+    <string name="school_details_info">Facilities offered</string>
+    <string name="school_details_fee_structure">Fee Structure</string>
+    <string name="school_details_important_dates">Important Dates</string>
+    <string name="school_details_contact_details">Contact Details</string>
+    <string name="school_details_address">Address</string>
+    <string name="school_details_phone">Phone No.</string>
+    <string name="school_details_external_link">External Link</string>
+    <string name="school_details_user_rating">User Rating</string>
+    <string name="school_details_more_photos">More Photos</string>
+    <string name="school_details_type_school">School</string>
+    
+    <!-- college details -->
+    <string name="college_details_type_college">College</string>
+    
+    <!-- tuition details -->
+    <string name="tuition_details_type_tuition">Tuition</string>
+    <string name="tuition_details_link">Link</string>
+    
+    <!-- Coaching details -->    
+    <string name="coaching_details_type_coaching">Coaching</string>
+    
+    <!-- Hobby details -->    
+    <string name="hobby_details_type_hobby">Hobby</string>
+    
+    <!-- Professional details -->    
+    <string name="professional_details_type_professional">Professional Courses</string>
+    
+    <!-- Career details -->    
+    <string name="career_details_type_career">Career Coaching</string>
+    
+    <!-- Workshop details -->    
+    <string name="workshop_details_type_workshop">Workshops/Events</string>
+    
+    <!-- Shop -->
+    <string name="shop_details_type_shop">Shop</string>
+    <string name="shop_details_product_info">Info\nProduct offered</string>
+    
+    
+    				<!-- Texts replacing images -->
+    				
+    <!-- Main tabs -->
+    <string name="tab_school_and_college">School and College</string>
+    <string name="tab_tutor">Tutor</string>
+    <string name="tab_hobby">Hobby Class</string>
+    <string name="tab_career">Career and More</string>
+    <string name="tab_workshop">Workshop and Events</string>
+    <string name="tab_news">News</string>
+    <string name="tab_talks">Talks</string>
+    <string name="tab_shop">Shop</string>
+    
+    <!-- Sub menu tabs -->
+    <string name="subtab_school">School</string>
+    <string name="subtab_college">College</string>
+    <string name="subtab_tuition">Tuition</string>
+    <string name="subtab_coaching">Coaching</string>
+    <string name="subtab_career_coaching">Career Coaching</string>
+    <string name="subtab_professional_course">Professional Course</string>
+    
+    <!-- Filter pages -->
+    <string name="filter_head_school">FIND SCHOOL</string>
+    <string name="filter_subhead_school">School</string>
+    <string name="filter_head_college">FIND COLLEGE</string>
+    <string name="filter_subhead_college">College</string>
+    <string name="filter_head_tutor">FIND TUTOR</string>
+    <string name="filter_subhead_tutor">Tuition</string>
+    <string name="filter_head_coaching">FIND COACHING</string>
+    <string name="filter_subhead_coaching">Coaching</string>
+    <string name="filter_head_hobby">FIND HOBBY CLASSES</string>
+    <string name="filter_subhead_hobby">Hobby Classes</string>
+    <string name="filter_head_career">FIND CAREER COACHING</string>
+    <string name="filter_subhead_career">Career Coaching</string>
+    <string name="filter_head_professional_course">FIND PROFESSIONAL COURSE</string>
+    <string name="filter_subhead_professional_course">Professional Course</string>
+    <string name="filter_head_workshop">FIND WORKSHOP/EVENTS</string>
+    <string name="filter_subhead_workshop">Workshop/Events</string>
+    <string name="filter_head_shop">FIND SHOP</string>
+    <string name="filter_subhead_shop">Shop</string>
+    
+    <!-- Home Screen -->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="tnc">Terms and Conditions</string>
+    <string name="about">About</string>
+    <string name="write_to_us">Write To Us</string>
+    <string name="version">Version</string>
+    <string name="welcome">WELCOME</string>
+    
+    <!-- About -->
+    <string name="developed_by">Developed by SRDT Pvt. Ltd.\n Lucknow</string>
+    
+    <!-- Write to us -->
+    <string name="remaining_length">Remaining length : </string>
+    
+    <!-- Forgot Password -->
+    <string name="forgot_password">FORGOT PASSWORD ?</string>
+    <string name="email_hint">Please provide your registered Email ID</string>
+    <string name="send_failure">Failure, Network Issue, Try Later</string>
+    <string name="send_successful">You will receive your password via email in a while.</string>
+    <string name="emailid_not_found">Email ID Not Found</string>
+    
+    <!-- Search -->
+    <string name="search_heading">Search Classifieds</string>
+    <string name="search_Text">Enter search text</string>
+    <string name="search_enter_text">Please enter search text</string>
+    <string name="search_select_domain">Please select category</string>
+    <string name="search_no_data_found">Sorry! No data found with your keyword</string>
+
+    <!-- GooglePlus -->
+    <string name="loading">Loading...</string>
+
+</resources>

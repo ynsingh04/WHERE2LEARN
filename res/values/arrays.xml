@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<array name="entries">
+		<item>@drawable/img_school</item>
+		<item>@drawable/img_shop</item>
+		<item>@drawable/img_professional</item>
+		<item>@drawable/img_career</item>
+		<item>@drawable/img_workshop</item>
+		<item>@drawable/img_hobby</item>
+		<item>@drawable/img_coaching</item>
+		<item>@drawable/img_tuition</item>		
+		<item>@drawable/img_college</item>
+	</array>	
+	<array name="names">
+	    <item>The school</item>
+	    <item>The shop</item>
+	    <item>The professional</item>
+	    <item>The career</item>
+	    <item>The workshop</item>
+	    <item>The hobby</item>
+	    <item>The coaching</item>
+	    <item>The tuition</item>
+	    <item>The college</item>
+	</array>
+	
+	 <!-- Domain options for Search screen -->
+	<array name="domain_names">
+	    <item>Select Category (Optional)</item>
+	    <item>Career Coaching</item>
+	    <item>Coaching</item>
+	    <item>College</item>
+	    <item>Hobby Classes</item>
+	    <item>Professional Courses</item>
+	    <item>School</item>	    
+	    <item>Tuition</item>	    
+	    <item>Workshop/Events</item>	    
+	</array>
+</resources>

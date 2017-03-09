@@ -1,0 +1,334 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+        android:id="@+id/shopTitleBarRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4"
+        android:background="@drawable/img_shop_top" >
+
+        <RelativeLayout
+            android:id="@+id/shopTitleBarLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/shop_searchImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:layout_marginLeft="0dip"
+                android:contentDescription="@string/app_name"
+                android:padding="5dip"
+                android:src="@drawable/school_list_arrow_filters" />
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/filter_head_shop"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+        
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_below="@+id/shopTitleBarLinearLayout"
+            android:background="@color/white"/>
+        
+        <ImageView
+            android:id="@+id/shop_iv_toptext"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:layout_marginTop="10dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/shop_icon"
+                android:layout_centerInParent="true" />
+        
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/shop_icon_text"
+                android:layout_below="@+id/shop_iv_toptext"
+                android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/shop_sv_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="6"
+        android:background="@drawable/bg_shop"
+        android:fadeScrollbars="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+            
+            <!-- filter layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:layout_margin="15dip"
+                android:padding="15dip"
+                android:layout_marginBottom="35dip" >
+
+                <!-- filter 1 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/school_icon_4" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    	android:background="@drawable/fields_bg"
+                        android:padding="5dip"
+                        android:layout_marginLeft="5dip" >
+
+                        <TextView
+                            android:id="@+id/shopCityFilterTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="30dip"
+                            android:paddingEnd="30dip"
+                            android:drawableBottom="@android:color/transparent"
+                            android:text="@string/school_city"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/shopCityFilterImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dip"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/school_plus_sign" />
+                    </RelativeLayout>
+                </LinearLayout>
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dip"
+                    android:layout_marginStart="35dip"
+                    android:layout_gravity="start"
+                    android:text="@string/please_select_only_one_city"
+                    android:textColor="@color/white"/>
+
+                <!-- filter 2 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/school_icon_5" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    	android:background="@drawable/fields_bg"
+                        android:padding="5dip"
+                        android:layout_marginLeft="5dip" >
+
+                        <TextView
+                            android:id="@+id/shopAreaFilterTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="30dip"
+                            android:paddingEnd="30dip"
+                            android:drawableBottom="@android:color/transparent"
+                            android:text="@string/school_area"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/shopAreaFilterImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dip"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/school_plus_sign" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- filter 3 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_category_icons" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    	android:background="@drawable/fields_bg"
+                        android:padding="5dip"
+                        android:layout_marginLeft="5dip" >
+
+                        <TextView
+                            android:id="@+id/shopCategoryFilterTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="30dip"
+                            android:paddingEnd="30dip"
+                            android:drawableBottom="@android:color/transparent"
+                            android:text="@string/shop_category"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/shopCategoryFilterImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dip"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/school_plus_sign" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- filter 4 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/icon_category_2" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    	android:background="@drawable/fields_bg"
+                        android:padding="5dip"
+                        android:layout_marginLeft="5dip" >
+
+                        <TextView
+                            android:id="@+id/shopSubCategoryFilterTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="30dip"
+                            android:paddingEnd="30dip"
+                            android:drawableBottom="@android:color/transparent"
+                            android:text="@string/shop_sub_category"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/shopSubCategoryFilterImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dip"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/school_plus_sign" />
+                    </RelativeLayout>
+                </LinearLayout>
+                
+                <ImageView
+                android:id="@+id/shopOKImageView"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dip"
+                android:contentDescription="@string/app_name"
+                android:padding="5dip"
+                android:src="@drawable/ok_btn" />
+            </LinearLayout>
+
+            <!-- <ImageView
+                android:id="@+id/shopOKImageView"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/app_name"
+                android:padding="5dip"
+                android:src="@drawable/ok_btn" /> -->
+        </LinearLayout>
+    </ScrollView>
+        
+    </LinearLayout>    
+
+    <LinearLayout
+        android:id="@+id/activity_schoolProgressBarLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/activity_mainProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- footer tag -->
+
+    <include layout="@layout/footer" />
+
+</RelativeLayout>
